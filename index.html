@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <title>Vakspoorthi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <div class="col-xs-12 header_div text-center">
+      <h2>Pronounce a letter</h2>     
+      <p>and view if it's correct</p>     
+    </div>
+    <div class="col-xs-12 main_div">
+      <center>
+      <button class="btn btn-info" onclick="start();"> START </button>
+      <h4 id="result_count"> </h4>
+      <h3 id="result_label">I can hear - </h3>
+        <br>
+        <img id="result_image" src="listen.gif" width="300" height="300">
+      </center>
+      </div>
+
+
+
+
+      <div class="container">
+  
+        <center>
+          <h3 class="btn btn-default heading">COLOUR RECOGNITION</h3>
+          <br><br>
+    
+          <p style="font-size: 22px;">Model is trained to identify basic colours </p>
+    
+          <!--<b class="name_of_objects">5</b>-->
+    
+          <label>Webcam View - </label>
+          <div id="camera"></div>
+          <br><br>
+          <div id="result_area">
+          <div id="result"></div>
+          <div id="result_area"></div>
+          <br><br>
+          <button onclick="take_snapshot();" class="btn btn-info">Capture Image</button>
+          <br><br>
+          <button onclick="check();" class="btn btn-success">Identify Image</button>
+          <br><br>
+    
+          <p style="font-size: 22px;">Object : <span id="result_object_name"></span> </p>
+          <p style="font-size: 22px;">Accuracy : <span id="result_object_accuracy"></span> </p>
+        </center>
+  
+      </div>
+
+
+
+
+      <div class="col-xs-12 copy_right_footer">
+        Developed by - Anushkaa KS
+      </div>
+<script src="code.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+ 
